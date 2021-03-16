@@ -1,0 +1,118 @@
+﻿<Page x:Class="BookStore.Client.Pages.JournalForm"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:uc="clr-namespace:BookStore.Client.res.UserControls"
+      xmlns:local="clr-namespace:BookStore.Client.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="JournalForm">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+
+        </Grid.RowDefinitions>
+        <Border Background="{StaticResource SoftBlueV3}"
+                Padding="2"
+                BorderThickness="0"
+                VerticalAlignment="Center"
+                CornerRadius="3"
+                Margin="6"
+                Grid.ColumnSpan="2">
+            <TextBlock Text="Add New Journal" Style="{StaticResource Text_v1}" Foreground="White"/>
+        </Border>
+
+        <uc:ErrorMessage x:Name="errorBox" Grid.ColumnSpan="2" Grid.Row="1"/>
+
+        <uc:FieldBox x:Name="nameField" Grid.Row="2"/>
+
+        <uc:FieldBox x:Name="isbnField"
+                     Grid.Row="2" 
+                    Grid.Column="1" />
+
+        <uc:FieldBox x:Name="priceField" 
+                     Grid.Row="3" />
+
+        <uc:FieldBox x:Name="discountField" 
+                     Grid.Row="3" Grid.Column="1"/>
+
+        <StackPanel Orientation="Horizontal" 
+                    Grid.Row="4" Grid.Column="1" 
+                    >
+            <Border Background="{StaticResource SoftBlueV3}"
+                Padding="2"
+                BorderThickness="0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                CornerRadius="3"
+                Margin="2">
+                <TextBlock Text="Units In Stock:" Style="{StaticResource Text_v1}" Foreground="White"/>
+            </Border>
+            <uc:IntegerUpDown x:Name="unitInStockField" Margin="5,0,0,0" Width="60" Height="30" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="4" 
+                    HorizontalAlignment="Left"
+                    Margin="0,10">
+            <Border Background="{StaticResource SoftBlueV3}"
+                Padding="2"
+                BorderThickness="0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                CornerRadius="3"
+                Margin="2">
+                <TextBlock Text="Published Date:" Style="{StaticResource Text_v1}" Foreground="White"/>
+            </Border>
+            <DatePicker x:Name="dateField"  VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="5"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Left"
+                    Margin="0,10">
+            <Border Background="{StaticResource SoftBlueV3}"
+                Padding="2"
+                BorderThickness="0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                CornerRadius="3"
+                Margin="2">
+                <TextBlock Text="Image:" Style="{StaticResource Text_v1}" Foreground="White"/>
+            </Border>
+            <uc:ImagePicker x:Name="imageField" Margin="5,0,0,0" DefaultImage="../Assets/Images/default-book.png" Height="50" />
+        </StackPanel>
+
+        <!--Only Journal-->
+
+        <uc:FieldBox x:Name="fieldField" 
+                     Grid.Row="5" Grid.Column="1" />
+
+        <uc:FieldBox x:Name="volumeField" Grid.Row="6"/>
+
+        <uc:FieldBox x:Name="issueField" Grid.Column="1" Grid.Row="6"/>
+
+        <StackPanel Grid.Row="9" Grid.ColumnSpan="2" Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+            <Button x:Name="submitBtn" Style="{StaticResource Blue_Button}" FontSize="20" Grid.Row="9" Grid.ColumnSpan="2" Click="submitBtn_Click">
+                <TextBlock x:Name="submitBtnTxt" Text="Add" Style="{StaticResource Text_v1}" Foreground="White"/>
+            </Button>
+
+            <Button x:Name="removeBtn" Style="{StaticResource Blue_Button}" FontSize="20" Visibility="Collapsed"  Click="removeBtn_Click">
+                <TextBlock Text="Remove" Style="{StaticResource Text_v1}" Foreground="White"/>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>

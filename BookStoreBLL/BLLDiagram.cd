@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BookStore.BLL.Convert.ViewConverter" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAgAACAAAAAAAAABAAAABAAAACAAEAAA=</HashCode>
+      <FileName>Convert\Converter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.BLL.util.UserLoggedInException" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>util\BLLExceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.BLL.util.UserAccessException" Collapsed="true">
+    <Position X="1.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>util\BLLExceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.BLL.util.ViewNotExistException" Collapsed="true">
+    <Position X="1.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>util\BLLExceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.BLL.util.UpdatedItemNotMachingException" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>util\BLLExceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.BLL.util.PrimeryKeyAllReadyExistException" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>util\BLLExceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.BLL.util.WorkerUpdateFailedException" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>util\BLLExceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.BLL.util.WhatException" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>util\BLLExceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.BLL.UserLoggedInEventArgs" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAgAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>util\EventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.BLL.Logger" Collapsed="true">
+    <Position X="1.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAQAAAAAAABAAAAgAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Log.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.BLL.Logic" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBABAAAAiAQBwACBQhAACQAAAAhAgSEBQAIQAQCIAAE=</HashCode>
+      <FileName>Logic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

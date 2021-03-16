@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BookStore.DAL.Logger.Logger" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAAAKAAIAAAABQIAAAACABAAAAgAAgAgAEBAAABAAAA=</HashCode>
+      <FileName>Logger\Logger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.DAL.Models.Book" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACIAAAAAAAAAAAAiAIAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Models\Book.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.DAL.Models.Journal" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICAAgAA=</HashCode>
+      <FileName>Models\Journal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.DAL.Models.StoreItem" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IABCAAAAAQAAAAAAAIAAAAQAAAAAAAAAAgAAAAAgAgA=</HashCode>
+      <FileName>Models\StoreItem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BookStore.DAL.Models.Worker" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QABCAEAAAAAAAAACAQAAAAAAAAAAAAACAAAAAAAAAgg=</HashCode>
+      <FileName>Models\Worker.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BookStore.DAL.Repositorys.RepositoryClosedEventArgs" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Repositorys\EventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.DAL.Repositorys.RepositoryOpenedEventArgs" Collapsed="true">
+    <Position X="10.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositorys\EventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.DAL.Repositorys.RepositorySavedEventArgs" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositorys\EventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.DAL.Repositorys.RepositoryCreatedEventArgs&lt;T&gt;" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositorys\EventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.DAL.Repositorys.ItemNotFoundException" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositorys\Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.DAL.Repositorys.RepositoryCloesedException" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositorys\Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.DAL.Repositorys.OrderIdNotFoundException" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositorys\Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.DAL.Repositorys.PrimeryKeyAllReadyExistException" Collapsed="true">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositorys\Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.DAL.Repositorys.RepositoryOpenFailedExceptiom" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositorys\Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.DAL.Repositorys.RepositorySaveFailedExceptiom" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositorys\Exceptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.DAL.Repositorys.Repository&lt;T&gt;" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAYACIAAAAAAIgpAABAKBAAAEIAIAAQAAkAAAADAAIA=</HashCode>
+      <FileName>Repositorys\Repository.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="BookStore.DAL.Repositorys.StoreItemRepository" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAEAAAAAAEAAAAAAAAAAAAAAIAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Repositorys\StoreItemRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.DAL.Repositorys.WorkerRepository" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAGAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Repositorys\WorkerRepository.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="BookStore.DAL.Interfaces.IIdable&lt;T&gt;" Collapsed="true">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IIdable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="BookStore.DAL.Interfaces.IRepository&lt;T&gt;" Collapsed="true">
+    <Position X="7" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIACAAAAAAAAggAAAAABAAAAIAIAAAAAgAAAAAAAIA=</HashCode>
+      <FileName>Interfaces\IRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="BookStore.DAL.Models.Genres" Collapsed="true">
+    <Position X="5.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAgBAAAAQAAAABQAAKEAAAgQAAAAIAAAEAUAAAQ=</HashCode>
+      <FileName>Models\Genres.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

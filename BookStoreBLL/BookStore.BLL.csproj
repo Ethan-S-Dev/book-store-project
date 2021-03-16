@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <AssemblyName>BookStore.BLL</AssemblyName>
+    <RootNamespace>BookStore.BLL</RootNamespace>
+    <Platforms>x64;x86</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BookStore.ViewModel\BookStore.ViewModel.csproj" />
+    <ProjectReference Include="..\BookStoreDAL\BookStore.DAL.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BookStore.ViewModel.AssetPool" Collapsed="true">
+    <Position X="5.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAEAAAAAAAAAABAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>AssetPool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.ViewModel.Controls.StoreItemControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQAIAAAAACAAACAAAQAAAAAAAAAQAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Controls\StoreItemControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BookStore.ViewModel.Controls.WorkerControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQBAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwA=</HashCode>
+      <FileName>Controls\WorkerControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BookStore.ViewModel.Controls.WorkerLabel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAEAAAAAQAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAg=</HashCode>
+      <FileName>Controls\WorkerLabel.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BookStore.ViewModel.Models.BookView" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACIAAAAAAAAAAAAiAIAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Models\BookView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.ViewModel.Models.GenresView" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAABBACAAAQARAAAEAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Models\GenresView.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BookStore.ViewModel.Models.GenreView" Collapsed="true">
+    <Position X="8.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAEAAAAAAQAAAAEAAAgIAAAAAAAAAA=</HashCode>
+      <FileName>Models\GenresView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.ViewModel.Models.JournalView" Collapsed="true">
+    <Position X="2.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICAAgAA=</HashCode>
+      <FileName>Models\JournalView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.ViewModel.Models.StoreItemView" Collapsed="true">
+    <Position X="1.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAACAAAAAQAAAAAAAIAAAAQAAAAAAAAAAgAAACAgAAA=</HashCode>
+      <FileName>Models\StoreItemView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BookStore.ViewModel.Models.WorkerView" Collapsed="true">
+    <Position X="5.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAEAAAAAAAAACgQAgAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Models\WorkerView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="BookStore.ViewModel.Models.ViewGenres" Collapsed="true">
+    <Position X="5.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAgBAAAAQAAAABQAAKEAAAgQAAAAIAAAEAUAAAQ=</HashCode>
+      <FileName>Models\GenresView.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

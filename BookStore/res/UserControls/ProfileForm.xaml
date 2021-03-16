@@ -1,0 +1,181 @@
+﻿<UserControl x:Class="BookStore.Client.res.UserControls.ProfileForm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BookStore.Client.res.UserControls"
+             xmlns:muc="clr-namespace:BookStore.ViewModel.Controls;assembly=BookStore.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Border Background="{StaticResource SoftBlueV3}"
+                CornerRadius="3"
+                Margin="10"
+                Padding="10"              
+                >
+            <TextBlock Text="Profile Info" Style="{StaticResource Text_v1}" Foreground="White" FontSize="24"/>
+        </Border>
+        <local:ErrorMessage x:Name="errorBox" Grid.Row="1" Margin="5"/>
+        <local:FieldBox x:Name="firstField" Grid.Row="2" BoxWidth="200" Text="First Name:"/>
+        <local:FieldBox x:Name="lastField" Grid.Row="3" BoxWidth="200" Text="Last Name:"/>
+        <local:FieldBox x:Name="userField" Grid.Row="4" BoxWidth="200" Text="User Name:"/>
+
+        <Grid Grid.Row="5"
+              VerticalAlignment="Center">
+            <Border Background="{StaticResource SoftBlueV3}"
+                    Margin="5"
+                    Padding="20,5,20,5"
+                    CornerRadius="3"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center">
+                <TextBlock Text="Rank:" Style="{StaticResource Text_v1}" Foreground="White"/>
+            </Border>
+            <Border x:Name="rankTextBlock" 
+                    Width="200" Margin="2"                       
+                         HorizontalAlignment="Right"
+                         VerticalAlignment="Center"
+                    Background="{StaticResource SoftGray}"                    >
+                <TextBlock x:Name="rankText" FontSize="18"/>
+            </Border>
+
+            <ComboBox x:Name="rankField" 
+                         Width="200" Margin="2" 
+                         FontSize="18"
+                         HorizontalAlignment="Right"
+                         VerticalAlignment="Center"
+                         Visibility="Hidden">
+                <ComboBox.Resources>
+                    <Style TargetType="TextBlock" BasedOn="{StaticResource Text_v1}" />
+                </ComboBox.Resources>
+            </ComboBox>
+        </Grid>
+
+        <Grid x:Name="passGridRow" Grid.Row="6" 
+                    VerticalAlignment="Center">
+
+            <Border Background="{StaticResource SoftBlueV3}"
+                    Margin="5"
+                    Padding="20,5,20,5"
+                    CornerRadius="3"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Center">
+                <TextBlock Text="Password:" Style="{StaticResource Text_v1}" Foreground="White"/>
+            </Border>
+            <Button x:Name="passBtn" Style="{StaticResource Clear_Button}" 
+                    Content="Change Password"
+                    Click="passBtn_Click"
+                    HorizontalAlignment="Right"/>
+            <StackPanel x:Name="newPassBlock" HorizontalAlignment="Right" Margin="3" >
+                <StackPanel.Resources>
+                    <Style TargetType="PasswordBox">
+                        <Style.Triggers>
+                            <Trigger Property="IsFocused" Value="False">
+                                <Setter Property="Background" Value="{StaticResource SoftGray}"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </StackPanel.Resources>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
+                    <TextBlock Text="Password:" Style="{StaticResource Text_v1}"/>
+                    <PasswordBox x:Name="passBoxFieldNew"  Margin="3,0,0,0" Width="200"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Confirm:" Style="{StaticResource Text_v1}" Margin="0,0,13,0"/>
+                    <PasswordBox x:Name="passBoxFieldConf" Width="200"/>
+                </StackPanel>
+            </StackPanel>
+            <Border x:Name="passBoxFields" 
+                 HorizontalAlignment="Right"
+                  VerticalAlignment="Center"
+                    Margin="2"
+                    Background="{StaticResource SoftBlueV3}"
+                    CornerRadius="10"
+                    Visibility="Collapsed">
+                <Grid>
+                    <Button Style="{StaticResource Close_Button}" Click="Close_Pass_Click"
+                            Grid.Column="1"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Top"/>
+                    <Grid Margin="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                        </Grid.RowDefinitions>
+                        <local:ErrorMessage x:Name="passErrorBox" Grid.ColumnSpan="2"
+                                        Margin="5"
+                                        Padding="10,5,10,5"/>
+                        <TextBlock Text="Old Pass:" Grid.Row="1" Style="{StaticResource Text_v1}" Foreground="White"/>
+                        <TextBlock Text="New Pass:" Grid.Row="2" Style="{StaticResource Text_v1}" Foreground="White"/>
+                        <TextBlock Text="Confirm:" Grid.Row="3" Style="{StaticResource Text_v1}" Foreground="White"/>
+                        <PasswordBox x:Name="passOldField"
+                                 Grid.Column="1"
+                                 Grid.Row="1"
+                                 Width="200" Margin="2" 
+                                 FontSize="18"/>
+                        <PasswordBox x:Name="passNewField"
+                                 Grid.Column="1" 
+                                 Grid.Row="2"
+                                 Width="200" Margin="2" 
+                                 FontSize="18"/>
+                        <PasswordBox x:Name="passConfirmField"
+                                 Grid.Column="1"
+                                 Grid.Row="3"
+                                 Width="200" Margin="2" 
+                                 FontSize="18"/>
+                        <Button x:Name="passSaveBtn" 
+                            Content="Save" 
+                            Style="{StaticResource Clear_Button}"
+                            Foreground="White"
+                            Click="passSaveBtn_Click"
+                            Grid.ColumnSpan="2"
+                            Grid.Row="4"/>
+                    </Grid>
+                </Grid>
+            </Border>
+        </Grid>
+        <StackPanel Grid.Row="7"
+                    Orientation="Horizontal"
+                    VerticalAlignment="Center">
+            <Border Background="{StaticResource SoftBlueV3}"
+                    Margin="5"
+                    Padding="20,5,20,5"
+                    CornerRadius="3"
+                    VerticalAlignment="Center"
+                    >
+                <TextBlock Text="Profile Picture:" Style="{StaticResource Text_v1}" Foreground="White"/>
+            </Border>
+            <local:ImagePicker x:Name="imgField" DefaultImage="../../Assets/Images/default_profile.png" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="8" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Button Content="Update" Style="{StaticResource Blue_Button}"
+                 Click="Update_Button"
+                    x:Name="upd_Btn"/>
+            <Button Content="Remove" Style="{StaticResource Blue_Button}"
+                    Click="Remove_Button"
+                    x:Name="rem_Btn"/>
+            <Button Content="Add" Style="{StaticResource Blue_Button}"
+                    Click="Add_Button"
+                    x:Name="add_Btn"/>
+        </StackPanel>
+
+    </Grid>
+</UserControl>

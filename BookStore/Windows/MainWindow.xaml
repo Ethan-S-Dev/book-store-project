@@ -1,0 +1,59 @@
+﻿<Window x:Class="BookStore.Client.Windows.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:uc="clr-namespace:BookStore.Client.res.UserControls"
+        mc:Ignorable="d"
+        Height="450" Width="800"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        MinWidth="1280"
+        MinHeight="760">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="25"/>
+    </WindowChrome.WindowChrome>
+    <Border x:Name="full_win_Border">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Border x:Name="window_border"  Grid.RowSpan="2" CornerRadius="10" Background="{StaticResource SoftBlueV1}"/>
+            <Border x:Name="titlebar_border" CornerRadius="10,10,0,0" Background="{StaticResource SoftBlueV3}" />
+            <Grid WindowChrome.IsHitTestVisibleInChrome="True" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="70"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="25"/>
+                    <ColumnDefinition Width="25"/>
+                    <ColumnDefinition Width="25"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Style="{StaticResource Title_Bar}"/>
+                <Button x:Name="close_btn" Style="{StaticResource Close_Button}" Grid.Column="4"/>
+                <Button x:Name="max_btn" Style="{StaticResource Max_Button}" Grid.Column="3"/>
+                <Button x:Name="min_btn" Style="{StaticResource Min_Button}" Grid.Column="2"/>
+            </Grid>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="80"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Border x:Name="userBox"/>
+                
+                <uc:MenuList x:Name="menu" Grid.Row="1" SelectionChanged="MenuList_SelectionChanged"/>
+                
+                <Frame x:Name="page_Frame" 
+                       Grid.RowSpan="2" 
+                       Grid.Column="1"/>
+            </Grid>
+        </Grid>
+    </Border>
+
+</Window>

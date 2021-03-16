@@ -1,0 +1,43 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="TextBlock" x:Key="Text_v1">
+        <Setter Property="Foreground" Value="{StaticResource LightBlack}"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="FontFamily" Value="Helvatica"/>
+        <Setter Property="FontWeight" Value="Light"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="FontSize" Value="18"/>
+    </Style>
+    <Style TargetType="PasswordBox">
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontWeight" Value="Light"/>
+        <Setter Property="FontFamily" Value="Helvatica"/>
+    </Style>
+    <Style TargetType="TextBox">
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="FontWeight" Value="Light"/>
+        <Setter Property="FontFamily" Value="Helvatica"/>
+    </Style>
+    <Style x:Key="Title_v1" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{StaticResource LightBlack}"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="FontSize" Value="38"/>
+        <Setter Property="FontFamily" Value="Helvatica"/>
+        <Setter Property="FontWeight" Value="Medium"/>
+    </Style>
+    <Style x:Key="Title_Bar" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="{StaticResource SoftGray}" />
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="FontFamily" Value="Helvatica"/>
+        <Setter Property="FontWeight" Value="ExtraLight"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="Margin" Value="10,0,0,0"/>
+        <Setter Property="Text" Value="Book Store"/>
+    </Style>
+    <Style x:Key="ErrorText" TargetType="TextBlock">
+        <Setter Property="Foreground" Value="DarkRed"/>
+        <Setter Property="FontSize" Value="14"/>
+    </Style>
+
+    
+</ResourceDictionary>
