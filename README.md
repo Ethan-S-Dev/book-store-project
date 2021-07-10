@@ -7,7 +7,7 @@ Not my proudest project, but it shows the proggress I made.. 🙂
 
 ## Screenshots
 
-<img src="screenshots/addbook.png" width="240px"/><img src="screenshots/addjour.png" width="240px"/><img src="screenshots/addworker.png" width="240px"/><img src="screenshots/itemditail.png" width="240px"/><img src="screenshots/updateworker.png" width="240px"/><img src="screenshots/workers1.png" width="240px"/>
+<img src="screenshots/addbook.png" width="240px"/><img src="screenshots/addjour.png" width="240px"/><img src="screenshots/addworker.png" width="240px"/><img src="screenshots/itemditail.png" width="240px"/><img src="screenshots/updateworker.png" width="240px"/>
 
 ## Technologies
  
