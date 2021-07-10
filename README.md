@@ -7,8 +7,12 @@ Not my proudest project, but it shows the proggress I made.. 🙂
 
 ## Screenshots
 
-<img src="screenshots/screenshot_1.png" width="240px"> <img src="screenshots/screenshot_2.png" width="240px"/> <img src="screenshots/screenshot_3.png" width="240px"/> <img src="screenshots/screenshot_4.png" width="240px"/>
-<img src="screenshots/screenshot_5.png" width="240px"/> <img src="screenshots/screenshot_6.png" width="240px"/>
+<img src="screenshots/LoginScreen.png" width="240px"> <img src="screenshots/addbook.png" width="240px"/> <img src="screenshots/addjour.png" width="240px"/> <img src="screenshots/addworker.png" width="240px"/>
+<img src="screenshots/advanced.png" width="240px"/> <img src="screenshots/inventory.png" width="240px"/>
+<img src="screenshots/itemditail.png" width="240px"/> <img src="screenshots/menuscreen.png" width="240px"/>
+<img src="screenshots/profile.png" width="240px"/> <img src="screenshots/search.png" width="240px"/>
+<img src="screenshots/updateitem.png" width="240px"/> <img src="screenshots/updateworker.png" width="240px"/>
+<img src="screenshots/workers1.png" width="240px"/>
 
 ## Technologies
  
